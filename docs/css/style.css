@@ -1,0 +1,177 @@
+@font-face {
+	font-family: 'GmarketSansMedium';
+	src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_2001@1.1/GmarketSansMedium.woff') format('woff');
+	font-weight: normal;
+	font-style: normal;
+}
+
+html > body {
+	font-family: 'GmarketSansMedium';
+}
+
+/* 라이브러리  */
+.con {
+	max-width: 1200px;
+}
+
+.mobile-con {
+	max-width: 1000px;
+}
+
+/* 커스텀 */
+
+/* pc탑바 구현 시작 */
+.menu-box-1 .logo > img {
+	display: block;
+	width: 71px;
+}
+
+.menu-widget-group > ul > li > a {
+	display: block;
+	padding: 0 10px;
+	font-size: 13px;
+	color: #888;
+	transition: color .3s;	
+}
+
+.menu-widget-group > ul > li:hover > a {
+	color: #dfdfdf;
+}
+
+.menu-btn-group {
+	display: flex;
+	gap: 0 10px;
+}
+
+.menu-btn-group > a {
+	font-size: 14px;	
+	display: block;
+	border-radius: 30px;
+	padding: 5px 15px;
+	color: white;
+	border: 1px solid;
+	transition: background-color .3s, color .3s;
+}
+
+.menu-btn-group > a:first-child {
+	background-color: #ff7e6b;	
+	border-color: #ff7e6b;
+}
+
+.menu-btn-group > a:hover:first-child {
+	background-color: #fff;
+	color: #ff7e6b;
+}
+
+.menu-btn-group > a:last-child {	
+	background-color: #12cfca;
+	border-color: #12cfca;
+}
+
+.menu-btn-group > a:hover:last-child {	
+	background-color: #10adb5;	
+}
+
+.top-bar__menu > ul > li > a {
+	display: block;	
+	color: #55585b;
+	font-size: 14px;
+	letter-spacing: 1px;
+	padding: 0 50px;
+	transition: color .3s;
+}
+
+.top-bar__menu > ul > li:hover > a {	
+	color: rgba(33, 33, 33, 0.5);
+}
+/* pc탑바 구현 끝 */
+
+/* mobile 탑바 구현 시작 */
+.mobile-logo > img {
+	width: 104px;
+}
+
+.mobile-top-bar__side-menu-btn > span {
+	color: #1ecad3;
+	font-size: 20px;
+}
+/* mobile 탑바 구현 끝 */
+
+/* 하단바 구현 시작 */
+.bottom-bar__menu-box ul {
+	max-width: 700px;	
+}
+
+.bottom-bar__menu-box ul > li > a {
+	font-size: 14px;
+	display: block;
+	color: #999;
+	padding: 10px;
+}
+
+.bottom-bar__widget-list > a {
+	display: block;
+	padding: 0 7px;
+}
+
+.bottom-bar__widget-list > a:first-child > img {
+	width: 190px;
+}
+
+.bottom-bar__widget-list > a:not(:first-child) > img {
+	width: 40px;
+}
+
+.mobile-bottom-bar__menu-box > ul > li > a {
+	display: block;	
+	font-size: 13px;
+	color: #999;
+}
+/* 하단바 구현 끝 */
+
+
+
+/* 화면 너비가 992px 이상 */
+@media(min-width: 992px) {
+	.mobile-top-bar {
+		display: none;
+	}
+	
+	.mobile-section-video-wrap {
+		display: none;
+	}
+	
+	.mobile-bottom-bar {
+		display: none;
+	}
+}
+
+/* 화면 너비가 992px 이하, 767px 이상 */
+@media(max-width: 992px) and (min-width: 767px) {
+	.pc-top-bar {
+		display: none;
+	}		
+	
+	.mobile-section-video-wrap {
+		display: none;
+	}
+	
+	.pc-bottom-bar {
+		display: none;
+	}		
+}
+
+/* 화면 너비가 766px 이하 */
+@media(max-width: 766px) {
+	.pc-top-bar {
+		display: none;
+	}
+	
+	.pc-section-video-wrap {
+		display: none;
+	}
+	
+	.pc-bottom-bar {
+		display: none;
+	}
+}
