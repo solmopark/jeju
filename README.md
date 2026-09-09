@@ -1,2 +1,2 @@
 # jeju
-jejubeer
+jejubeer with Tailwind CSS(RWD)
